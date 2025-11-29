@@ -22,77 +22,13 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 header nav a {
   color: #fff;
   margin: 0 10px;
   text-decoration: none;
 }
 
-
-
-@media(max-width: 768px) {
-
-  /* Header */
-  header {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  header nav a {
-    display: inline-block;
-    margin: 5px 8px;
-  }
-
-  
-  .logo img {
-    width: 100%;
-    max-width: 250px;  /* biar ga terlalu besar di HP */
-    height: auto;
-  }
-
-  
-  .hero {
-    padding: 20px;
-  }
-
-  /* Post — ubah jadi vertical */
-  .post {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .post img {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    margin: auto;
-  }
-
-  /* Grid layout jadi 1 kolom */
-  .container {
-    display: block;
-    padding: 10px;
-  }
-
-  
-  .sidebar {
-    margin-top: 20px;
-  }
-
-  
-  .about img {
-    width: 100%;
-    height: auto;
-  }
-
- 
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-}
 header nav a:hover {
   text-decoration: underline;
 }
@@ -103,6 +39,7 @@ header nav a:hover {
   padding: 30px;
   background: #eee;
 }
+
 .hero h1 {
   margin: 0;
 }
@@ -130,7 +67,7 @@ header nav a:hover {
   width: 100%;
   height: 300px;
   background-image: 'https: //i.ibb.co.com/LD8SYZrj/IMG-20251125-192348.jpg';
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
 }
 
@@ -139,29 +76,33 @@ header nav a:hover {
 
 .post {
   background: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
+
 .post img {
   width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 10px;
 }
+
 .post text {
   flex: 1;
-} 
+}
+
 .post-text .title {
   margin: 0;
   font-size: 28px;
   color: #000000;
   font-weight: bold;
 }
+
 .post-text .desc {
   color: #333;
   margin: 10px 0 20px;
@@ -177,15 +118,16 @@ header nav a:hover {
   text-decoration: none;
   border-radius: 4px;
 }
+
 .read-more-btn:hover {
   background: #0c1b71;
 }
 
 .in-box {
   background: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 iframe {
@@ -201,13 +143,16 @@ iframe {
   padding: 20px;
   border-radius: 8px;
 }
+
 .sidebar h3 {
   margin-top: 0;
 }
+
 .sidebar ul {
   list-style: none;
   padding: 0;
 }
+
 .sidebar ul li {
   margin-bottom: 10px;
 }
@@ -221,10 +166,80 @@ footer {
   margin-top: 20px;
 }
 
-.footer-content{
+.footer-content {
   max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
 
-  align-items: center;}
+
+
+/* Responsive Design */
+@media(max-width: 768px) {
+
+  /* Header */
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  header nav a {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+
+  /* Logo */
+  .logo img {
+    width: 100%;
+    max-width: 250px;
+    /* biar ga terlalu besar di HP */
+    height: auto;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 20px;
+  }
+
+  /* Post — ubah jadi vertical */
+  .post {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .post img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: auto;
+  }
+
+  
+  .container {
+    display: block;
+    padding: 10px;
+  }
+
+  
+  .sidebar {
+    margin-top: 20px;
+  }
+
+ 
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
